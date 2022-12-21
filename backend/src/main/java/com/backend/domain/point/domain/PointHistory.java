@@ -31,6 +31,7 @@ public class PointHistory  {
 
     private int cash;
 
+    @Enumerated(EnumType.STRING)
     private PointType pointType;
 
     @CreatedDate

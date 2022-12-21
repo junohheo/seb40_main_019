@@ -30,6 +30,7 @@ public class OrderProduct extends Auditable {
 
     private int quantity;
 
+    @Enumerated(EnumType.STRING)
     private OrderProductReviewStatus reviewStatus;
     public static OrderProduct createOrderProduct(Product product, int quantity){
         OrderProduct orderProduct = new OrderProduct();
